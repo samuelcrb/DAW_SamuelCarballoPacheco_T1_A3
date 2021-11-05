@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Horario Semanal</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/logoHorario.ico">
+        <style>
+            #dias{
+                background-color: rgb(105, 96, 96); 
+                color: white;
+            }
+            #horas{
+                background-color: rgb(25, 26, 25); 
+                color: white;
+                text-align: center;
+            }
+            #tbody{
+                text-align: center;
+            }
+            #recreo{
+                background-color: rgb(50, 80, 46);
+            }
+            #Ingles{
+                background-color: rgb(110, 203, 99);
+            }
+            .Programacion{
+                background-color: rgb(78, 159, 61);
+            }
+            .Entornos{
+                background-color: rgb(64, 99, 67);
+            }
+            .BBDD{
+                background-color: rgb(93, 130, 51);
+            }
+            .SSII{
+                background-color: rgb(30, 81, 40);
+            }
+            .LLMM{
+                background-color: rgb(119, 217, 112);
+            }
+            .FOL{
+                background-color: rgb(198, 213, 126);
+            }
+        </style>
+
+    </head>
+    <body>
+        <table border="1"; cellpadding="25"; cellspacing="0" >
+            <caption> <strong>Horario 1º DAW/DAM </strong> </caption>
+            <colgroup id="dias"></colgroup>
+            <thead id="horas">
+                <tr>
+                    <th></th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <th>08.30-09.25</th>
+                    <td class="Programacion">Programación</td>
+                    <td class="Programacion" rowspan="2";>Programación</td>
+                    <td  class="Entornos" rowspan="2";>Entornos de Desarrollo</td>
+                    <td  class="BBDD">Bases de Datos</td>
+                    <td class="Programacion" rowspan="2";>Programación</td>
+                </tr>
+                <tr>
+                    <th>09.25-10.20</th>
+                    <td class="SSII"rowspan="2";>Sistemas Informáticos</td>
+                    <!-- <td>Programación</td> -->
+                    <!-- <td>Entornos de Desarrollo</td> -->
+                    <td class="Programacion" rowspan="2";">Programación</td>
+                    <!-- <td>Programación</td> -->
+                </tr>
+                <tr>
+                    <th>10.20-11.15</th>
+                    <!-- <td>Sistemas Informáticos</td> -->
+                    <td class="BBDD"colspan="2";>Bases de Datos</td>
+                    <!-- <td>Bases de Datos</td> -->
+                    <!-- <td>Programación</td> -->
+                    <td class="SSII">Sistemas Informáticos</td>
+                </tr>
+                <tr>
+                    <th>11.15-11.45</th>
+                    <td id="recreo" colspan="5";>RECREO</td>
+                </tr>
+                <tr>
+                    <th>11.45-12.40</th> 
+                    <td class="LLMM"rowspan="2";>Lenguajes de Marcas y Sisteemas de gestión de la información</td>
+                    <td class="BBDD">Bases de Datos</td>
+                    <td class="FOL"colspan="2";>Formación y orientación laboral</td>
+                    <!-- <td>Formación y orientación laboral</td> -->
+                    <td class="BBDD"rowspan="2";>Bases de Datos</td>
+                </tr>
+                <tr>
+                    <th>12.40-13.35</th>
+                    <!-- <td>Lenguajes de Marcas y Sisteemas de gestión de la información</td> -->
+                    <td class="SSII"rowspan="2";>Sistemas informáticos</td>
+                    <td id="Ingles"rowspan="2";>Lengua extranjera para uso profesional</td>
+                    <td class="LLMM" rowspan="2";>Lenguajes de Marcas y Sisteemas de gestión de la información</td>   
+                    <!-- <td>Bases de Datos</td> -->
+                </tr>
+                <tr>
+                    <th>13.35-14.30</th>
+                    <td class="Entornos">Entornos de Desarrollo</td>
+                    <!-- <td>Sisteas Informáticos</td> -->
+                    <!-- <td>Lengua extranjera para uso profesional</td> -->
+                    <!-- <td>Lenguajes de Marcas y Sisteemas de gestión de la información</td>    -->
+                    <td class="FOL">Formación y orientación laboral</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </body>
+</html>
